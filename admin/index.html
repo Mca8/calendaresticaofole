@@ -41,9 +41,14 @@
 
     jQuery.getJSON('festas.json', function(data) {
       jQuery.each(data.festas, function(i, f) {
+        if(f.hour == 'nhn'){
+          hour = '<span class="events__tag events__tag--highlighted">Hora ainda não definida</span>';
+        }else{
+          hour = '<span class="events__tag">'+f.hour+'</span>';
+        }
         
             var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div><span class="events__tag events__tag--highlighted">Hora ainda não definida</span></li>';
-            jQuery(tblRow).appendTo(".events__list");
+            jQuery(tblRow).appendTo(".events-container");
       });
 
     });
