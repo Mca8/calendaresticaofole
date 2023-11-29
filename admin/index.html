@@ -41,7 +41,7 @@
 
     jQuery.getJSON('festas.json', function(data) {
       jQuery.each(data.festas, function(i, f) {
-        if(f.hour == 'nhn'){
+        if(f.hour === 'nHn'){
           hour = '<span class="events__tag events__tag--highlighted">Hora ainda não definida</span>';
         }else{
           hour = '<span class="events__tag">'+f.hour+'</span>';
