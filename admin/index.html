@@ -15,7 +15,7 @@
       <div class="calendar-container">
         <div class="calendar-container__header">
           <div class="d-flex justify-center">
-            <img src="logo.png" class="class-img" alt="Estica o Fole">
+            <img src="../logo.png" class="class-img" alt="Estica o Fole">
           </div>
           <!-- <h2 class="calendar-container__title"></h2> -->
         </div>
@@ -57,7 +57,7 @@
       jQuery.each(data.festas, function(i, f) {
         
             var tblRow = "<tr>" + "<td>" + f.local + "</td>" +
-            "<td>" + f.day + "</td>" + "<td>" + f.job + "</td>" + "<td>" + f.roll + "</td>" + "</tr>";
+            "<td>" + f.day + "</td>" + "<td>" + f.month + "</td>" + "<td>" + f.hour + "</td>" + "</tr>";
             console.log(tblRow);
             jQuery(tblRow).appendTo(".events-container");
       });
