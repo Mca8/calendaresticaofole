@@ -23,20 +23,6 @@
       <div class="events-container">
         <span class="events__title">Agosto</span>
         <ul class="events__list">
-          <li class="events__item">
-            <div class="events__item--left">
-              <span class="events__name">01 - Agosto</span>
-              <span class="events__date">Cortinhas</span>
-            </div>
-            <span class="events__tag events__tag--highlighted">Hora ainda não definida</span>
-          </li>
-          <li class="events__item">
-            <div class="events__item--left">
-              <span class="events__name">15 - Agosto</span>
-              <span class="events__date">Vreia de Jales</span>
-            </div>
-            <span class="events__tag events__tag--highlighted">Hora ainda não definida</span>
-          </li>
           
         </ul>
       </div>
@@ -56,10 +42,8 @@
     jQuery.getJSON('festas.json', function(data) {
       jQuery.each(data.festas, function(i, f) {
         
-            var tblRow = "<tr>" + "<td>" + f.local + "</td>" +
-            "<td>" + f.day + "</td>" + "<td>" + f.month + "</td>" + "<td>" + f.hour + "</td>" + "</tr>";
-            console.log(tblRow);
-            jQuery(tblRow).appendTo(".events-container");
+            var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div><span class="events__tag events__tag--highlighted">Hora ainda não definida</span></li>';
+            jQuery(tblRow).appendTo(".events__list");
       });
 
     });
