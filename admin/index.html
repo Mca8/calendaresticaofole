@@ -20,11 +20,13 @@
           <!-- <h2 class="calendar-container__title"></h2> -->
         </div>
       </div>
-      <div class="events-container">
+      <div class="events-container containerJulho" style="display: none;">
+        <span class="events__title">Julho</span>
+        <ul class="events__list Julho"></ul>
+      </div>
+      <div class="events-container containerAgosto" style="display: none;">
         <span class="events__title">Agosto</span>
-        <ul class="events__list">
-          
-        </ul>
+        <ul class="events__list Agosto"></ul>
       </div>
     </main>
   </div>
@@ -34,21 +36,38 @@
 
   <script>
 
-      $(function() {
+  jQuery(function() {
+
+
+    var dateIn = new Date();
+    var dateMonth = dateIn.getMonth()+1;
+    var day = dateIn.getDate();
+    alert(day);
 
 
     var festas = [];
 
     jQuery.getJSON('festas.json', function(data) {
+
+
       jQuery.each(data.festas, function(i, f) {
-        if(f.hour === 'nHn'){
+
+        if(f.hour === 0){
           hour = '<span class="events__tag events__tag--highlighted">Hora ainda não definida</span>';
         }else{
-          hour = '<span class="events__tag">'+f.hour+'</span>';
+          hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
         }
+        var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
+
+          if(f.month == 'Julho'){
+            jQuery('.containerJulho').css('display', 'block');
+          }else if(f.month == 'Agosto'){
+            jQuery('.containerAgosto').css('display', 'block');
+          }
+          jQuery(tblRow).appendTo('.container'+f.month+' .events__list.'+f.month+'');
+   
+
         
-            var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div><span class="events__tag events__tag--highlighted">Hora ainda não definida</span></li>';
-            jQuery(tblRow).appendTo(".events-container");
       });
 
     });
