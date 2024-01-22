@@ -1,6 +1,13 @@
 {
     "festas": [
         {
+            "local": "Castelãos",
+            "day": "28",
+            "month": "Abril",
+            "month_number": 4,
+            "hour": 15
+        },
+        {
             "local": "Cortinhas",
             "day": "01",
             "month": "Agosto",
