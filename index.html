@@ -21,9 +21,29 @@
           <!-- <h2 class="calendar-container__title"></h2> -->
         </div>
       </div>
+      <div class="events-container containerJaneiro" style="display: none;">
+        <span class="events__title">Janeiro</span>
+        <ul class="events__list Janeiro"></ul>
+      </div>
+      <div class="events-container containerFevereiro" style="display: none;">
+        <span class="events__title">Fevereiro</span>
+        <ul class="events__list Fevereiro"></ul>
+      </div>
+      <div class="events-container containerMarco" style="display: none;">
+        <span class="events__title">Março</span>
+        <ul class="events__list Marco"></ul>
+      </div>
       <div class="events-container containerAbril" style="display: none;">
         <span class="events__title">Abril</span>
         <ul class="events__list Abril"></ul>
+      </div>
+      <div class="events-container containerMaio" style="display: none;">
+        <span class="events__title">Maio</span>
+        <ul class="events__list Maio"></ul>
+      </div>
+      <div class="events-container containerJunho" style="display: none;">
+        <span class="events__title">Junho</span>
+        <ul class="events__list Junho"></ul>
       </div>
       <div class="events-container containerJulho" style="display: none;">
         <span class="events__title">Julho</span>
@@ -32,6 +52,22 @@
       <div class="events-container containerAgosto" style="display: none;">
         <span class="events__title">Agosto</span>
         <ul class="events__list Agosto"></ul>
+      </div>
+      <div class="events-container containerSetembro" style="display: none;">
+        <span class="events__title">Setembro</span>
+        <ul class="events__list Setembro"></ul>
+      </div>
+      <div class="events-container containerOutubro" style="display: none;">
+        <span class="events__title">Outubro</span>
+        <ul class="events__list Outubro"></ul>
+      </div>
+      <div class="events-container containerNovembro" style="display: none;">
+        <span class="events__title">Novembro</span>
+        <ul class="events__list Novembro"></ul>
+      </div>
+      <div class="events-container containerDezembro" style="display: none;">
+        <span class="events__title">Dezembro</span>
+        <ul class="events__list Dezembro"></ul>
       </div>
     </main>
   </div>
@@ -63,10 +99,28 @@
         }
         var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
 
-          if(f.month == 'Abril'){
+          if(f.month == 'Janeiro'){
+            jQuery('.containerJaneiro').css('display', 'block');
+          }else if(f.month == 'Fevereiro'){
+            jQuery('.containerFevereiro').css('display', 'block');
+          }else if(f.month == 'Marco'){
+            jQuery('.containerMarco').css('display', 'block');
+          }else if(f.month == 'Abril'){
             jQuery('.containerAbril').css('display', 'block');
+          }else if(f.month == 'Maio'){
+            jQuery('.containerMaio').css('display', 'block');
+          }else if(f.month == 'Junho'){
+            jQuery('.containerJunho').css('display', 'block');
+          }else if(f.month == 'Julho'){
+            jQuery('.containerJulho').css('display', 'block');
           }else if(f.month == 'Agosto'){
             jQuery('.containerAgosto').css('display', 'block');
+          }else if(f.month == 'Setembro'){
+            jQuery('.containerSetembro').css('display', 'block');
+          }else if(f.month == 'Novembro'){
+            jQuery('.containerNovembro').css('display', 'block');
+          }else if(f.month == 'Dezembro'){
+            jQuery('.containerDezembro').css('display', 'block');
           }
           jQuery(tblRow).appendTo('.container'+f.month+' .events__list.'+f.month+'');
    
