@@ -21,6 +21,10 @@
           <!-- <h2 class="calendar-container__title"></h2> -->
         </div>
       </div>
+      <div class="events-container containerAbril" style="display: none;">
+        <span class="events__title">Abril</span>
+        <ul class="events__list Abril"></ul>
+      </div>
       <div class="events-container containerJulho" style="display: none;">
         <span class="events__title">Julho</span>
         <ul class="events__list Julho"></ul>
@@ -59,8 +63,8 @@
         }
         var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
 
-          if(f.month == 'Julho'){
-            jQuery('.containerJulho').css('display', 'block');
+          if(f.month == 'Abril'){
+            jQuery('.containerAbril').css('display', 'block');
           }else if(f.month == 'Agosto'){
             jQuery('.containerAgosto').css('display', 'block');
           }
