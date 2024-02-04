@@ -1,6 +1,13 @@
 {
     "festas": [
         {
+            "local": "Pegarinhos",
+            "day": "16",
+            "month": "Março",
+            "month_number": 3,
+            "hour": 14
+        },
+        {
             "local": "Castelãos",
             "day": "28",
             "month": "Abril",
