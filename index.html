@@ -111,9 +111,9 @@
             }else{
               jQuery('.containerMarco').css('display', 'block');
               if(f.month_number <= dateMonth && f.day > day){
-                jQuery('.containerMarco').children('.events__item').css('display', 'none');
+                jQuery('.containerMarco').children().children('.events__item').css('display', 'none');
               }else{
-                jQuery('.containerMarco').children('.events__item').css('display', 'block');
+                jQuery('.containerMarco').children().children('.events__item').css('display', 'block');
               }
             }
           }else if(f.month == 'Abril'){
