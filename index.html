@@ -81,13 +81,13 @@
 
 
     var dateIn = new Date();
-    var dateMonth = dateIn.getMonth()+1;
-    var day = dateIn.getDate();
+    let dateMonth = dateIn.getMonth()+1;
+    let day = dateIn.getDate();
 
 
     var festas = [];
 
-    jQuery.getJSON('festas.json', function(data) {
+    jQuery.getJSON('C:/Users/Miguel%20Costa/Downloads/festas.json', function(data) {
 
 
       jQuery.each(data.festas, function(i, f) {
@@ -97,6 +97,7 @@
         }else{
           hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
         }
+
         var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
 
           if(f.month == 'Janeiro'){
@@ -104,7 +105,17 @@
           }else if(f.month == 'Fevereiro'){
             jQuery('.containerFevereiro').css('display', 'block');
           }else if(f.month == 'Marco'){
-            jQuery('.containerMarco').css('display', 'block');
+            if(f.month_number > dateMonth){
+              jQuery('.containerMarco').css('display', 'none');
+              
+            }else{
+              jQuery('.containerMarco').css('display', 'block');
+              if(f.month_number <= dateMonth && f.day > day){
+                jQuery('.containerMarco').children('.events__item').css('display', 'none');
+              }else{
+                jQuery('.containerMarco').children('.events__item').css('display', 'block');
+              }
+            }
           }else if(f.month == 'Abril'){
             jQuery('.containerAbril').css('display', 'block');
           }else if(f.month == 'Maio'){
