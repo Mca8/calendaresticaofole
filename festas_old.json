@@ -1,6 +1,13 @@
 {
     "festas": [
         {
+            "local": "teste2",
+            "day": "16",
+            "month": "Fevereiro",
+            "month_number": 2,
+            "hour": 14
+        },
+        {
             "local": "Pegarinhos",
             "day": "16",
             "month": "Marco",
@@ -9,7 +16,7 @@
         },
         {
             "local": "Pegarinhos teste",
-            "day": "120",
+            "day": "20",
             "month": "Marco",
             "month_number": 3,
             "hour": 14
