@@ -103,11 +103,20 @@
           if(f.month == 'Janeiro'){
             jQuery('.containerJaneiro').css('display', 'block');
           }else if(f.month == 'Fevereiro'){
-            jQuery('.containerFevereiro').css('display', 'block');
+            if(f.month_number > dateMonth){
+              jQuery('.containerFevereiro').css('display', 'none');
+            }else{
+              jQuery('.containerFevereiro').css('display', 'block');
+              if(f.month_number <= dateMonth && f.day > day){
+                jQuery('.containerFevereiro').children().children('.events__item').css('display', 'none');
+              }else{
+                jQuery('.containerFevereiro').children().children('.events__item').css('display', 'block');
+              }
+            }
+            
           }else if(f.month == 'Marco'){
             if(f.month_number > dateMonth){
               jQuery('.containerMarco').css('display', 'none');
-              
             }else{
               jQuery('.containerMarco').css('display', 'block');
               if(f.month_number <= dateMonth && f.day > day){
