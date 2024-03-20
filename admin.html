@@ -124,10 +124,15 @@
             if(f.month_number < dateMonth){
               jQuery('.containerMarco').css('display', 'none');
             }else{
-              jQuery('.containerMarco').css('display', 'block');
-              if(f.day < day){
-                jQuery('.containerMarco').children().children('.events__item').css('display', 'none');
+              if(f.month_number == dateMonth){
+                jQuery('.containerMarco').css('display', 'block');
+                
+                if(f.day < day){
+                  jQuery('.containerMarco').children().children('.events__item').css('display', 'none');
+                }
               }
+              
+             
             }
           }else if(f.month == 'Abril'){
             if(f.month_number < dateMonth){
