@@ -215,17 +215,17 @@
 
           // Verify dates to last with now date
           if(f.month_number < dateMonth){
-            jQuery('container'+f.month).css('display', 'none');
-            console.log( jQuery('container'+f.month).attr('class')); 
+            jQuery('.container'+f.month).css('display', 'none');
+            console.log( jQuery('.container'+f.month).attr('class')); 
           }else{
-            console.log( jQuery('container'+f.month).attr('class')); 
-            jQuery('container'+f.month).css('display', 'block');
-            // if(f.month_number == dateMonth){
-            //   jQuery('container'+f.month).css('display', 'block');
-            //   if(f.day <= day){
-            //     jQuery('container'+f.month).find('.day-'+f.day).css('display', 'none');
-            //   }
-            // }
+            console.log( jQuery('.container'+f.month).attr('class')); 
+            jQuery('.container'+f.month).css('display', 'block');
+            if(f.month_number == dateMonth){
+              jQuery('.container'+f.month).css('display', 'block');
+              if(f.day <= day){
+                jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none');
+              }
+            }
           }
    
 
