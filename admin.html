@@ -100,7 +100,7 @@
           hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
         }
 
-        var tblRow = '<li class="events__item day-"'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
+        var tblRow = '<li class="events__item" id="'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
 
           if(f.month == 'Janeiro'){
             if(f.month_number < dateMonth){
