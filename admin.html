@@ -219,7 +219,7 @@
 
           }else{
 
-            if(f.month_number == dateMonth && day > f.day){
+            if(f.month_number >= dateMonth && day > f.day){
               jQuery('.container'+f.month).css('display', 'block');
               if(f.day <= day){
                 jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none');
