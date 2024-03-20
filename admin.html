@@ -128,7 +128,7 @@
                 jQuery('.containerMarco').css('display', 'block');
 
                 if(f.day < day){
-                  console.log(jQuery('.containerMarco').children('ul').find('.day-'+f.day).attr('class'));
+                  
                   jQuery('.containerMarco').children('ul').find('.day-'+f.day).css('display', 'none');
                 }
               }
@@ -209,6 +209,7 @@
             }
           }
           jQuery(tblRow).appendTo('.container'+f.month+' .events__list.'+f.month+'');
+          console.log(jQuery('.containerMarco').children('ul').find('.day-'+f.day).attr('class'));
    
 
         
