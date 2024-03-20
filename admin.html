@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Calendar Estica o Fole</title>
+  <title>Calendar Estica o Fole - Admin</title>
   <link rel="icon" href="esticaofole-favicon.jpg" sizes="32x32" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -84,6 +84,8 @@
     let dateMonth = dateIn.getMonth()+1;
     let day = dateIn.getDate();
 
+    console.log('mes-'+dateMonth+' / day-'+day);
+
 
     var festas = [];
 
@@ -98,7 +100,7 @@
           hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
         }
 
-        var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
+        var tblRow = '<li class="events__item day-"'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
 
           if(f.month == 'Janeiro'){
             if(f.month_number < dateMonth){
@@ -117,7 +119,7 @@
               if(f.month_number <= dateMonth && f.day < day){
                 jQuery('.containerFevereiro').children().children('.events__item').css('display', 'none');
               }
-            } 
+            }
           }else if(f.month == 'Marco'){
             if(f.month_number < dateMonth){
               jQuery('.containerMarco').css('display', 'none');
