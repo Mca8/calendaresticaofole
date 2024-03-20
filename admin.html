@@ -128,7 +128,7 @@
                 jQuery('.containerMarco').css('display', 'block');
 
                 if(f.day < day){
-                  console.log(f.day+' dia atual ->'+day);
+                  console.log(jQuery('.containerMarco').children('ul').find('.day-'+f.day).attr('class'));
                   jQuery('.containerMarco').children('ul').find('.day-'+f.day).css('display', 'none');
                 }
               }
