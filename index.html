@@ -84,6 +84,8 @@
     let dateMonth = dateIn.getMonth()+1;
     let day = dateIn.getDate();
 
+    console.log('mes-'+dateMonth+' / day-'+day);
+
 
     var festas = [];
 
@@ -98,109 +100,132 @@
           hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
         }
 
-        var tblRow = '<li class="events__item"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
+        var tblRow = '<li class="events__item day-'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
 
-          if(f.month == 'Janeiro'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerJaneiro').css('display', 'none');
-            }else{
-              jQuery('.containerJaneiro').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerJaneiro').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Fevereiro'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerFevereiro').css('display', 'none');
-            }else{
-              jQuery('.containerFevereiro').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerFevereiro').children().children('.events__item').css('display', 'none');
-              }
-            } 
-          }else if(f.month == 'Marco'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerMarco').css('display', 'none');
-            }else{
-              jQuery('.containerMarco').css('display', 'block');
-              if(f.day < day){
-                jQuery('.containerMarco').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Abril'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerAbril').css('display', 'none');
-            }else{
-              jQuery('.containerAbril').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerAbril').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Maio'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerMaio').css('display', 'none');
-            }else{
-              jQuery('.containerMaio').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerMaio').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Junho'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerJunho').css('display', 'none');
-            }else{
-              jQuery('.containerJunho').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerJunho').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Julho'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerJulho').css('display', 'none');
-            }else{
-              jQuery('.containerJulho').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerJulho').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Agosto'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerAgosto').css('display', 'none');
-            }else{
-              jQuery('.containerAgosto').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerAgosto').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Setembro'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerSetembro').css('display', 'none');
-            }else{
-              jQuery('.containerSetembro').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerSetembro').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Novembro'){
-             if(f.month_number < dateMonth){
-              jQuery('.containerNovembro').css('display', 'none');
-            }else{
-              jQuery('.containerNovembro').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerNovembro').children().children('.events__item').css('display', 'none');
-              }
-            }
-          }else if(f.month == 'Dezembro'){
-            if(f.month_number < dateMonth){
-              jQuery('.containerDezembro').css('display', 'none');
-            }else{
-              jQuery('.containerDezembro').css('display', 'block');
-              if(f.month_number <= dateMonth && f.day < day){
-                jQuery('.containerDezembro').children().children('.events__item').css('display', 'none');
-              }
+          // if(f.month == 'Janeiro'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerJaneiro').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerJaneiro').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerJaneiro').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Fevereiro'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerFevereiro').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerFevereiro').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerFevereiro').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Marco'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerMarco').css('display', 'none');
+          //   }else{
+          //     if(f.month_number == dateMonth){
+          //       jQuery('.containerMarco').css('display', 'block');
+
+          //       if(f.day < day){
+                  
+          //         jQuery('.containerMarco').children('ul').find('.day-'+f.day).css('display', 'none');
+          //       }
+          //     }
+              
+             
+          //   }
+          // }else if(f.month == 'Abril'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerAbril').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerAbril').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerAbril').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Maio'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerMaio').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerMaio').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerMaio').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Junho'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerJunho').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerJunho').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerJunho').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Julho'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerJulho').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerJulho').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerJulho').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Agosto'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerAgosto').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerAgosto').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerAgosto').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Setembro'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerSetembro').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerSetembro').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerSetembro').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Novembro'){
+          //    if(f.month_number < dateMonth){
+          //     jQuery('.containerNovembro').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerNovembro').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerNovembro').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }else if(f.month == 'Dezembro'){
+          //   if(f.month_number < dateMonth){
+          //     jQuery('.containerDezembro').css('display', 'none');
+          //   }else{
+          //     jQuery('.containerDezembro').css('display', 'block');
+          //     if(f.month_number <= dateMonth && f.day < day){
+          //       jQuery('.containerDezembro').children().children('.events__item').css('display', 'none');
+          //     }
+          //   }
+          // }
+
+
+          // ADD to content
+          jQuery(tblRow).appendTo('.container'+f.month+' .events__list.'+f.month+'');
+
+          // Verify dates to last with now date
+          if(f.month_number < dateMonth){
+            jQuery('.container'+f.month).css('display', 'none');
+
+          }else{
+            if(f.month_number == dateMonth && f.day <= day){
+              jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none');
+            }else if(f.month_number == dateMonth && f.day > day){
+              jQuery('.container'+f.month).css('display', 'block');
+            }else if(f.month_number > dateMonth){
+              jQuery('.container'+f.month).css('display', 'block');
             }
           }
-          jQuery(tblRow).appendTo('.container'+f.month+' .events__list.'+f.month+'');
    
 
         
