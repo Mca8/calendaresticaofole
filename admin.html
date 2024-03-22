@@ -222,6 +222,8 @@
               jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none');
             }else if(f.month_number == dateMonth && f.day > day){
               jQuery('.container'+f.month).css('display', 'block');
+            }else if(f.month_number > dateMonth){
+              jQuery('.container'+f.month).css('display', 'block');
             }
           }
    
