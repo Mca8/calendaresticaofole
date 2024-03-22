@@ -220,11 +220,13 @@
 
           }else{
             if(f.month_number == dateMonth && f.day <= day){
-              jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none').attr('festa-done', 0);
+              jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none').attr('festa-done', 1);
             }else if(f.month_number == dateMonth && f.day > day){
               jQuery('.container'+f.month).css('display', 'block');
+              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-done', 0);
             }else if(f.month_number > dateMonth){
               jQuery('.container'+f.month).css('display', 'block');
+              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-done', 0);
             }
           }
 
