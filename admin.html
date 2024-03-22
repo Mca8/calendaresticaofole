@@ -83,6 +83,7 @@
     var dateIn = new Date();
     let dateMonth = dateIn.getMonth()+1;
     let day = dateIn.getDate();
+    let count_festas = 0;
 
     console.log('mes-'+dateMonth+' / day-'+day);
 
@@ -226,6 +227,10 @@
               jQuery('.container'+f.month).css('display', 'block');
             }
           }
+
+          count_festas = jQuery('.events__item').length;
+          console.log(count_festas);
+
    
 
         
