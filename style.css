@@ -165,6 +165,29 @@
     width: 40px;
     height: 38px;
   }
+    .count_festas p {
+        font-weight: 600;
+        margin: 12px 0 15px;
+        text-transform: uppercase;
+        font-size: 13px;
+    }
+    .count_festas ul {
+        list-style: none;
+    }
+    .count_festas ul li p {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 12px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    .count_festas ul li:first-child p {
+        color: green;
+    }
+    .count_festas ul li:last-child {
+        color: red;
+    }
   @media (min-width: 360px) {
     .calendar-table__header .calendar-table__col {
       width: 46px;
