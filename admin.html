@@ -221,17 +221,17 @@
 
           }else{
             if(f.month_number == dateMonth && f.day <= day){
-              jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none').attr('festa-done', 1);
+              jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none').addClass('festa-done');
             }else if(f.month_number == dateMonth && f.day > day){
               jQuery('.container'+f.month).css('display', 'block');
-              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-open', 1);
+              jQuery('.container'+f.month).find('.day-'+f.day).addClass('festa-open');
             }else if(f.month_number > dateMonth){
               jQuery('.container'+f.month).css('display', 'block');
-              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-open', 1);
+              jQuery('.container'+f.month).find('.day-'+f.day).addClass('festa-open');
             }
           }
 
-          count_festas_done = jQuery('.events__item').attr('festa-done');
+          count_festas_done = jQuery('.festa-done');
           // count_festas_open = jQuery('.events__item').attr('festa-open').length;
 
           console.log(count_festas_done);
