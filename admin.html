@@ -83,9 +83,10 @@
     var dateIn = new Date();
     let dateMonth = dateIn.getMonth()+1;
     let day = dateIn.getDate();
-    let count_festas = 0;
+    let count_festas_done = 0;
+    let count_festas_open = 0;
+    let count_festas_total = 0;
 
-    console.log('mes-'+dateMonth+' / day-'+day);
 
 
     var festas = [];
@@ -223,10 +224,10 @@
               jQuery('.container'+f.month).find('.day-'+f.day).css('display', 'none').attr('festa-done', 1);
             }else if(f.month_number == dateMonth && f.day > day){
               jQuery('.container'+f.month).css('display', 'block');
-              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-done', 0);
+              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-open', 1);
             }else if(f.month_number > dateMonth){
               jQuery('.container'+f.month).css('display', 'block');
-              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-done', 0);
+              jQuery('.container'+f.month).find('.day-'+f.day).attr('festa-open', 1);
             }
           }
 
