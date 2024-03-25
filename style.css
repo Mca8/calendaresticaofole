@@ -191,6 +191,12 @@
     span.events__tag.fat_block {
         background: orange;
     }
+    button.btn {
+        background: transparent;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
   @media (min-width: 360px) {
     .calendar-table__header .calendar-table__col {
       width: 46px;
