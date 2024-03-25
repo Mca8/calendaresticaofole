@@ -125,7 +125,7 @@
         if(f.fat === 0){
           fat = '';
         }else{
-          fat = '<span class="events__tag date_big fat_block">FAT</span>';
+          fat = '<button class="btn"><span class="events__tag date_big fat_block">FAT</span></button>';
         }
 
         var tblRow = '<li class="events__item day-'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+' '+fat+'</li>';
