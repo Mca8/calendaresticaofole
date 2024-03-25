@@ -13,13 +13,10 @@
 </head>
 <body>
   <div class="w3-container">
-    <h2>W3.CSS Modal</h2>
-    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
-  
-    <div id="id01" class="w3-modal">
+    <div class="w3-modal modal_fat">
       <div class="w3-modal-content">
         <div class="w3-container">
-          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <span class="w3-button w3-display-topright close">&times;</span>
           <p>Some text. Some text. Some text.</p>
           <p>Some text. Some text. Some text.</p>
         </div>
@@ -125,7 +122,13 @@
           hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
         }
 
-        var tblRow = '<li class="events__item day-'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
+        if(f.fat === 0){
+          fat = '';
+        }else{
+          fat = '<span class="events__tag date_big fat_block">FAT</span>';
+        }
+
+        var tblRow = '<li class="events__item day-'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+' '+fat+'</li>';
 
 
           // ADD to content
