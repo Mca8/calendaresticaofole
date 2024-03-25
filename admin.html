@@ -8,9 +8,24 @@
   <link rel="icon" href="esticaofole-favicon.jpg" sizes="32x32" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="w3-container">
+    <h2>W3.CSS Modal</h2>
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+  
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content">
+        <div class="w3-container">
+          <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+          <p>Some text. Some text. Some text.</p>
+          <p>Some text. Some text. Some text.</p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="main-container-wrapper">
     <main>
       <div class="calendar-container">
@@ -21,7 +36,8 @@
           <!-- <h2 class="calendar-container__title"></h2> -->
         </div>
         <div class="count_festas">
-          <p>festas - total = <span class="c-total">2</span></p>
+          <p>festas:<br>
+              total = <span class="c-total">2</span></p>
           <ul>
             <li><p>feitas: <span class="c-done">2</span></p></li>
             <li><p>por fazer: <span class="c-open">2</span></p></li>
