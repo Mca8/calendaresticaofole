@@ -188,6 +188,9 @@
     .count_festas ul li:last-child {
         color: red;
     }
+    span.events__tag.fat_block {
+        background: orange;
+    }
   @media (min-width: 360px) {
     .calendar-table__header .calendar-table__col {
       width: 46px;
