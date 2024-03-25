@@ -21,10 +21,10 @@
           <!-- <h2 class="calendar-container__title"></h2> -->
         </div>
         <div class="count_festas">
-          <p>festas - total = 9</p>
+          <p>festas - total = <span class="c-total">2</span></p>
           <ul>
-            <li><p>feitas: 2</p></li>
-            <li><p>por fazer: 2</p></li>
+            <li><p>feitas: <span class="c-done">2</span></p></li>
+            <li><p>por fazer: <span class="c-open">2</span></p></li>
           </ul>
         </div>
       </div>
@@ -111,113 +111,6 @@
 
         var tblRow = '<li class="events__item day-'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
 
-          // if(f.month == 'Janeiro'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerJaneiro').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerJaneiro').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerJaneiro').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Fevereiro'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerFevereiro').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerFevereiro').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerFevereiro').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Marco'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerMarco').css('display', 'none');
-          //   }else{
-          //     if(f.month_number == dateMonth){
-          //       jQuery('.containerMarco').css('display', 'block');
-
-          //       if(f.day < day){
-                  
-          //         jQuery('.containerMarco').children('ul').find('.day-'+f.day).css('display', 'none');
-          //       }
-          //     }
-              
-             
-          //   }
-          // }else if(f.month == 'Abril'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerAbril').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerAbril').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerAbril').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Maio'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerMaio').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerMaio').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerMaio').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Junho'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerJunho').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerJunho').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerJunho').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Julho'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerJulho').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerJulho').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerJulho').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Agosto'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerAgosto').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerAgosto').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerAgosto').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Setembro'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerSetembro').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerSetembro').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerSetembro').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Novembro'){
-          //    if(f.month_number < dateMonth){
-          //     jQuery('.containerNovembro').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerNovembro').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerNovembro').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }else if(f.month == 'Dezembro'){
-          //   if(f.month_number < dateMonth){
-          //     jQuery('.containerDezembro').css('display', 'none');
-          //   }else{
-          //     jQuery('.containerDezembro').css('display', 'block');
-          //     if(f.month_number <= dateMonth && f.day < day){
-          //       jQuery('.containerDezembro').children().children('.events__item').css('display', 'none');
-          //     }
-          //   }
-          // }
-
 
           // ADD to content
           jQuery(tblRow).appendTo('.container'+f.month+' .events__list.'+f.month+'');
@@ -243,7 +136,8 @@
 
       });
 
-      console.log(count_festas_done+' / '+count_festas_open);
+      count_festas_total = count_festas_done + count_festas_open;
+      console.log(count_festas_done+' / '+count_festas_open+' = '+count_festas_total);
 
     });
 
