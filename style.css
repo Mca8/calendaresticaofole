@@ -210,7 +210,7 @@
     }
     span.w3-button.close {
         font-size: 28px;
-        padding: 5px 15px;
+        padding: 0px 15px;
         background-color: #ccc !important;
     }
     @media (max-width:767px){
