@@ -41,6 +41,7 @@
             <li><p>total: <span class="c-total">2</span></p></li>
           </ul>
         </div>
+        <div class="count_festas_value"></div>
       </div>
       <div class="events-container containerJaneiro" style="display: none;">
         <span class="events__title">Janeiro</span>
@@ -107,6 +108,7 @@
     let count_festas_done = 0;
     let count_festas_open = 0;
     let count_festas_total = 0;
+    let festas_total_value = 0;
 
 
 
@@ -153,6 +155,8 @@
 
           count_festas_done = jQuery('.festa-done').length;
           count_festas_open = jQuery('.festa-open').length;
+          festas_total_value = fat_value;
+          
           
           jQuery('.btn').click(function(){
             fat_value = jQuery(this).attr('data-value');
@@ -166,6 +170,8 @@
       jQuery('.count_festas').find('.c-total').text(count_festas_total);
       jQuery('.count_festas').find('.c-done').text(count_festas_done);
       jQuery('.count_festas').find('.c-open').text(count_festas_open);
+
+      console.log(festas_total_value);
 
     });
     
