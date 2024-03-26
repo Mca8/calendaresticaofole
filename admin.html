@@ -114,7 +114,7 @@
 
     var festas = [];
 
-    jQuery.getJSON('festas_old.json', function(data) {
+    jQuery.getJSON('festas.json', function(data) {
 
 
       jQuery.each(data.festas, function(i, f) {
@@ -156,8 +156,7 @@
           count_festas_done = jQuery('.festa-done').length;
           count_festas_open = jQuery('.festa-open').length;
           festas_total_value += f.value;
-          
-          
+
           jQuery('.btn').click(function(){
             fat_value = jQuery(this).attr('data-value');
             jQuery('.modal_fat').find('.fat_value').html('<p>'+fat_value+'€</p>');
@@ -172,17 +171,13 @@
       jQuery('.count_festas').find('.c-open').text(count_festas_open);
       jQuery('.count_festas_value').text(festas_total_value);
 
-      console.log(festas_total_value);
-
     });
-    
+
     jQuery('.modal_fat .close').click(function(){
       jQuery('.modal_fat').css('display', 'none');
     });
 
   });
-
- 
   </script>
 </body>
 </html>
