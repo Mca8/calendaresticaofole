@@ -156,7 +156,7 @@
           
           jQuery('.btn').click(function(){
             fat_value = jQuery(this).attr('data-value');
-            jQuery(this).children().text(fat_value);
+            jQuery('.modal_fat').find('.fat_value').text(fat_value);
             jQuery('.modal_fat').css('display', 'block');
           });
       });
