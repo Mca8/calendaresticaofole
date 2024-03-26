@@ -34,11 +34,11 @@
           <!-- <h2 class="calendar-container__title"></h2> -->
         </div>
         <div class="count_festas">
-          <p>festas:<br>
-              total = <span class="c-total">2</span></p>
+          <p>festas:</p>
           <ul>
             <li><p>feitas: <span class="c-done">2</span></p></li>
             <li><p>por fazer: <span class="c-open">2</span></p></li>
+            <li><p>total: <span class="c-total">2</span></p></li>
           </ul>
         </div>
       </div>
@@ -156,7 +156,7 @@
           
           jQuery('.btn').click(function(){
             fat_value = jQuery(this).attr('data-value');
-            jQuery('.modal_fat').find('.fat_value').text(fat_value);
+            jQuery('.modal_fat').find('.fat_value').html('<p>'+fat_value+'€</p>');
             jQuery('.modal_fat').css('display', 'block');
           });
       });
@@ -169,9 +169,9 @@
 
     });
     
-  jQuery('.modal_fat .close').click(function(){
-    jQuery('.modal_fat').css('display', 'none');
-  });
+    jQuery('.modal_fat .close').click(function(){
+      jQuery('.modal_fat').css('display', 'none');
+    });
 
   });
 
