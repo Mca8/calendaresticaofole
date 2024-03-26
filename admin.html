@@ -152,7 +152,11 @@
 
           count_festas_done = jQuery('.festa-done').length;
           count_festas_open = jQuery('.festa-open').length;
-
+          
+          jQuery('.btn').click(function(){
+    console.log('click');
+    jQuery('.modal_fat').css('display', 'block');
+  });
       });
 
       count_festas_total = count_festas_done + count_festas_open;
@@ -162,14 +166,11 @@
       jQuery('.count_festas').find('.c-open').text(count_festas_open);
 
     });
-    jQuery('.btn').click(function(){
-    console.log('click');
-    jQuery('.modal_fat').css('display', 'block');
-  });
+    
   jQuery('.modal_fat .close').click(function(){
     jQuery('.modal_fat').css('display', 'none');
   });
-  
+
   });
 
  
