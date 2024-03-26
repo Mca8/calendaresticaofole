@@ -201,7 +201,17 @@
         cursor: pointer;
     }
     .w3-modal-content {
-        width: 600px;
+        width: 300px;
+    }
+    .fat_value {
+        padding: 30px 0;
+        text-align: center;
+        font-size: 20px;
+    }
+    span.w3-button.close {
+        font-size: 28px;
+        padding: 5px 15px;
+        background-color: #ccc !important;
     }
     @media (max-width:767px){
         .w3-modal-content {
