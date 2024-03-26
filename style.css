@@ -167,7 +167,7 @@
   }
     .count_festas p {
         font-weight: 600;
-        margin: 12px 0 15px;
+        margin: 12px 0 0px;
         text-transform: uppercase;
         font-size: 13px;
     }
@@ -189,6 +189,7 @@
      .count_festas ul li {
         width: 33.333%;
         float: left;
+        margin-bottom:15px;
     }
     .count_festas ul li:first-child p {
         color: white;
