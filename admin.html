@@ -125,7 +125,7 @@
         if(f.fat === 0){
           fat = '';
         }else{
-          fat = '<button class="btn"><span class="events__tag date_big fat_block">FAT</span></button>';
+          fat = '<button class="btn" data-value="'+f.value+'"><span class="events__tag date_big fat_block">FAT</span></button>';
         }
 
         var tblRow = '<li class="events__item day-'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+' '+fat+'</li>';
@@ -154,9 +154,9 @@
           count_festas_open = jQuery('.festa-open').length;
           
           jQuery('.btn').click(function(){
-    console.log('click');
-    jQuery('.modal_fat').css('display', 'block');
-  });
+    
+            jQuery('.modal_fat').css('display', 'block');
+          });
       });
 
       count_festas_total = count_festas_done + count_festas_open;
