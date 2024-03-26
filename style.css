@@ -180,13 +180,23 @@
         font-size: 12px;
         line-height: 12px;
         margin-top: 0;
-        margin-bottom: 5px;
+        margin-bottom: 0px;
+        text-align: center;
+        padding: 10px;
+        letter-spacing: .5px;
+        background: gainsboro;
+    }
+     .count_festas ul li {
+        width: 33.333%;
+        float: left;
     }
     .count_festas ul li:first-child p {
-        color: green;
+        color: white;
+        background: mediumseagreen;
     }
-    .count_festas ul li:last-child {
-        color: red;
+    .count_festas ul li:last-child p {
+        background: cadetblue;
+        color: white;
     }
     span.events__tag.fat_block {
         background: orange;
