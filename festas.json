@@ -19,6 +19,15 @@
             "value": 0
         },
         {
+            "local": "Corpo de Deus Jou",
+            "day": "30",
+            "month": "Maio",
+            "month_number": 5,
+            "hour": 16,
+            "fat": 0,
+            "value": 0
+        },
+        {
             "local": "Serapicos",
             "day": "16",
             "month": "Junho",
@@ -33,6 +42,15 @@
             "month": "Julho",
             "month_number": 7,
             "hour": 0,
+            "fat": 0,
+            "value": 0
+        },
+        {
+            "local": "Santa Isabel Jou",
+            "day": "26",
+            "month": "Julho",
+            "month_number": 7,
+            "hour": 21,
             "fat": 0,
             "value": 0
         },
