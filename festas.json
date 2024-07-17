@@ -117,21 +117,21 @@
             "fat": 0,
             "value": 0
         },
+          {
+            "local": "Bouçoais",
+            "day": "10",
+            "month": "Agosto",
+            "month_number": 8,
+            "hour": 17,
+            "fat": 1,
+            "value": 0
+        },
         {
             "local": "Lama de Arcos",
             "day": "10",
             "month": "Agosto",
             "month_number": 8,
             "hour": 21,
-            "fat": 1,
-            "value": 0
-        },
-        {
-            "local": "Santa Valha",
-            "day": "11",
-            "month": "Agosto",
-            "month_number": 8,
-            "hour": 0,
             "fat": 1,
             "value": 0
         },
@@ -143,7 +143,15 @@
             "hour": 0,
             "fat": 0,
             "value": 0
+        },
+         {
+            "local": "Aboleira",
+            "day": "18",
+            "month": "Agosto",
+            "month_number": 8,
+            "hour": 17,
+            "fat": 0,
+            "value": 0
         }
-       
     ]
  }
