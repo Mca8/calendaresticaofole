@@ -87,8 +87,8 @@
             "month": "Julho",
             "month_number": 7,
             "hour": 21,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 300
         },
         {
             "local": "Murça - Quinta da falgueira",
@@ -96,17 +96,17 @@
             "month": "Julho",
             "month_number": 7,
             "hour": 14,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 200
         },
         {
-            "local": "Carvas",
+            "local": "Carva",
             "day": "02",
             "month": "Agosto",
             "month_number": 8,
             "hour": 19,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 300
         },
         {
             "local": "Cortinhas",
@@ -114,8 +114,8 @@
             "month": "Agosto",
             "month_number": 8,
             "hour": 16,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 350
         },
         {
             "local": "Mascanho",
@@ -123,8 +123,8 @@
             "month": "Agosto",
             "month_number": 8,
             "hour": 20,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 200
         },
           {
             "local": "Bouçoais",
@@ -150,8 +150,8 @@
             "month": "Agosto",
             "month_number": 8,
             "hour": 18,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 350
         },
          {
             "local": "Aboleira",
@@ -159,17 +159,17 @@
             "month": "Agosto",
             "month_number": 8,
             "hour": 17,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 200
         },
         {
-            "local": "Carvas",
+            "local": "Carva",
             "day": "02",
             "month": "Setembro",
             "month_number": 9,
             "hour": 0,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 300
         }
     ]
  }
