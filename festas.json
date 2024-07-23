@@ -100,6 +100,15 @@
             "value": 0
         },
         {
+            "local": "Carvas",
+            "day": "02",
+            "month": "Agosto",
+            "month_number": 8,
+            "hour": 19,
+            "fat": 0,
+            "value": 0
+        },
+        {
             "local": "Cortinhas",
             "day": "03",
             "month": "Agosto",
@@ -152,6 +161,15 @@
             "hour": 17,
             "fat": 0,
             "value": 0
-        }
+        },
+        {
+            "local": "Carvas",
+            "day": "02",
+            "month": "Setembro",
+            "month_number": 9,
+            "hour": 0,
+            "fat": 0,
+            "value": 0
+        },
     ]
  }
