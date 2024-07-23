@@ -78,8 +78,8 @@
             "month": "Julho",
             "month_number": 7,
             "hour": 19,
-            "fat": 0,
-            "value": 0
+            "fat": 1,
+            "value": 250
         },
         {
             "local": "Santa Isabel Jou",
