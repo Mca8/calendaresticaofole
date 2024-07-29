@@ -118,6 +118,15 @@
             "value": 350
         },
         {
+            "local": "Valongo",
+            "day": "03",
+            "month": "Agosto",
+            "month_number": 8,
+            "hour": 20,
+            "fat": 1,
+            "value": 300
+        },
+        {
             "local": "Mascanho",
             "day": "09",
             "month": "Agosto",
