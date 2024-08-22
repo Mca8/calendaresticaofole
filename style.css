@@ -231,6 +231,15 @@
         padding: 5px 0;
         margin: 5px 0 15px;
     }
+    .event_dinner {
+        width: 45px;
+        height: 45px;
+        padding-top: 7px;
+        opacity:0;
+    }
+    .event_dinner svg {
+        fill: #86d8c9;
+    }
     @media (max-width:767px){
         .w3-modal-content {
             width: 100%;
