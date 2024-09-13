@@ -5,8 +5,9 @@
             "day": "09",
             "month": "Agosto",
             "month_number": 8,
-             "dinner": 1,
+            "dinner": 1,
             "hour": 0,
+            "min": 0,
             "fat": 1,
             "value": 500
         },
@@ -15,8 +16,9 @@
             "day": "10",
             "month": "Agosto",
             "month_number": 8,
-             "dinner": 0,
+            "dinner": 0,
             "hour": 0,
+            "min": 0,
             "fat": 1,
             "value": 500
         },
@@ -27,6 +29,7 @@
             "month_number": 8,
             "dinner": 0,
             "hour": 15,
+            "min": 30,
             "fat": 1,
             "value": 500
         },
@@ -35,8 +38,9 @@
             "day": "16",
             "month": "Agosto",
             "month_number": 8,
-             "dinner": 0,
+            "dinner": 0,
             "hour": 0,
+            "min": 0,
             "fat": 1,
             "value": 350
         }
