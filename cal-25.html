@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta property="og:image" content="https://mca8.github.io/calendaresticaofole/logo.png" />
-  <title>Calendar Estica o Fole</title>
+  <title>Calendar Estica o Fole - Tour 2025</title>
   <link rel="icon" href="esticaofole-favicon.jpg" sizes="32x32" />
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
@@ -95,10 +95,10 @@
 
       jQuery.each(data.festas, function(i, f) {
 
-        if(f.hour === 0){
+        if(f.hour === 0 && f.min === 0){
           hour = '<span class="events__tag events__tag--highlighted">Hora ainda não definida</span>';
         }else{
-          hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
+          hour = '<span class="events__tag date_big">'+f.hour+'h'+f.min+'</span>';
         }
       
 
