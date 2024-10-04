@@ -188,6 +188,15 @@
             "hour": 0,
             "fat": 1,
             "value": 300
+        },
+        {
+            "local": "Porrais",
+            "day": "06",
+            "month": "Outubro",
+            "month_number": 10,
+            "hour": 10,
+            "fat": 1,
+            "value": 0
         }
     ]
  }
