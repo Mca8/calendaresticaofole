@@ -98,7 +98,7 @@
         if(f.hour === 0){
           hour = '<span class="events__tag events__tag--highlighted">Hora ainda não definida</span>';
         }else{
-          hour = '<span class="events__tag date_big">'+f.hour+' H</span>';
+          hour = '<span class="events__tag date_big">'+f.hour+'H'+f.min'</span>';
         }
 
         var tblRow = '<li class="events__item day-'+f.day+'"><div class="events__item--left"><span class="events__name">'+ f.day +' - '+ f.month +'</span><span class="events__date">'+ f.local +'</span></div>'+hour+'</li>';
