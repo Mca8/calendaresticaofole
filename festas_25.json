@@ -1,6 +1,17 @@
 {
     "festas": [
          {
+            "local": "Pegarinhos",
+            "day": "09",
+            "month": "Marco",
+            "month_number": 3,
+            "dinner": 0,
+            "hour": 0,
+            "min": 0,
+            "fat": 1,
+            "value": 500
+         },
+         {
             "local": "São Vicente da Raia",
             "day": "09",
             "month": "Agosto",
