@@ -1,13 +1,15 @@
 {
     "festas": [
          {
-            "local": "",
-            "day": "",
-            "month": "",
-            "month_number": "",
-            "hour": "",
-            "fat": "",
-            "value":"" 
+            "local": "Pegarinhos",
+            "day": "09",
+            "month": "Marco",
+            "month_number": 3,
+            "dinner": 0,
+            "hour": 13,
+            "min": 30,
+            "fat": 1,
+            "value": 0 
         }
     ]
  }
