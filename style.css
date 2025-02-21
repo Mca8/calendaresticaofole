@@ -387,3 +387,11 @@
     color: #9faab7;
     display: inline-block;
   }
+span.events__tag.events__tag--dinner {
+    background: transparent;
+    color: #86d8c9;
+    border: 0 !important;
+    box-shadow: none;
+    font-size: 28px;
+    width: 80px;
+}
