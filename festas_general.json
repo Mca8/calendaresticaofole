@@ -54,6 +54,17 @@
             "min": 0,
             "fat": 1,
             "value": 350
+        },
+        {
+            "local": "Limaos",
+            "day": "01",
+            "month": "Setembro",
+            "month_number": 9,
+            "dinner": 0,
+            "hour": 14,
+            "min": 0,
+            "fat": 0,
+            "value": 400
         }
     ]
  }
