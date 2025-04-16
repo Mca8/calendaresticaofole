@@ -11,6 +11,17 @@
             "fat": 1,
             "value": 350
         },
+        {
+            "local": "Sambade",
+            "day": "21",
+            "month": "Junho",
+            "month_number": 6,
+            "dinner": 0,
+            "hour": 0,
+            "min": 0,
+            "fat": 1,
+            "value": 500
+        },
          {
             "local": "São Vicente da Raia",
             "day": "09",
