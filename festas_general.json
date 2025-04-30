@@ -12,6 +12,17 @@
             "value": 350
         },
         {
+            "local": "Murça",
+            "day": "08",
+            "month": "Maio",
+            "month_number": 5,
+            "dinner": 0,
+            "hour": 09,
+            "min": 0,
+            "fat": 1,
+            "value": 350
+        },
+        {
             "local": "Sambade",
             "day": "21",
             "month": "Junho",
