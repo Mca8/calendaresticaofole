@@ -33,6 +33,17 @@
             "fat": 1,
             "value": 500
         },
+        {
+            "local": "Murça",
+            "day": "12",
+            "month": "Julho",
+            "month_number": 7,
+            "dinner": 0,
+            "hour": 09,
+            "min": 30,
+            "fat": 0,
+            "value": 350
+        },
          {
             "local": "São Vicente da Raia",
             "day": "09",
