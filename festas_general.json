@@ -55,6 +55,17 @@
             "fat": 0,
             "value": 500
         },
+        {
+            "local": "Cortinhas",
+            "day": "04",
+            "month": "Agosto",
+            "month_number": 8,
+            "dinner": 0,
+            "hour": 19,
+            "min": "00",
+            "fat": 1,
+            "value": 350
+        },
          {
             "local": "São Vicente da Raia",
             "day": "09",
