@@ -78,6 +78,17 @@
             "value": 350
         },
         {
+            "local": "Franzilhal",
+            "day": "07",
+            "month": "Agosto",
+            "month_number": 8,
+            "dinner": 0,
+            "hour": 21,
+            "min": "00",
+            "fat": 1,
+            "value": 350
+        },
+        {
             "local": "Ferreira",
             "day": "08",
             "month": "Agosto",
