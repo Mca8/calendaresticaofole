@@ -155,6 +155,17 @@
             "value": 400
         },
         {
+            "local": "Vilar de Celas",
+            "day": "18",
+            "month": "Agosto",
+            "month_number": 8,
+            "dinner": 0,
+            "hour": 17,
+            "min": 30,
+            "fat": 1,
+            "value": 350
+        },
+        {
             "local": "Limaos",
             "day": "01",
             "month": "Setembro",
