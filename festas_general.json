@@ -122,13 +122,24 @@
             "value": 500
         },
         {
+            "local": "Deimaos",
+            "day": "13",
+            "month": "Agosto",
+            "month_number": 8,
+            "dinner": 0,
+            "hour": 21,
+            "min": 30,
+            "fat": 1,
+            "value": 500
+        },
+        {
             "local": "Vilela Seca",
             "day": "15",
             "month": "Agosto",
             "month_number": 8,
             "dinner": 0,
-            "hour": 15,
-            "min": 30,
+            "hour": 17,
+            "min": "00",
             "fat": 1,
             "value": 500
         },
